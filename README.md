@@ -28,10 +28,10 @@ Animation Effects on Player Win/Loss
 <img src = "./img/read-me/player-win-animation.png "/>
 
 Animation Effects on PC Win
-<img src = " ./img/read-me/pc-win-anim.png"/>
+<img src = ".\img\read-me\pc-win-anim.png"/>
 
 Nxt Button Appear When Our score is higher than PC Score
 <img src = "./img/read-me/nxt-btn.png "/>
 
 Hurray Page
-<img src = " ./img/read-me/hurray-page.png"/>
+<img src = ".\img\read-me\hurray-page.png"/>
