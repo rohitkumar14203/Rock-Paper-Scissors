@@ -1,0 +1,408 @@
+body {
+  height: 100%;
+  background-color: #89c15e;
+  font-family: "roboto";
+  text-transform: uppercase;
+}
+
+.panel {
+  color: white;
+  font-size: 1.3rem;
+  border: white solid 2px;
+  display: flex;
+  width: 85%;
+  height: 120px;
+
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  margin-top: 50px;
+  font-weight: bold;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.title {
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+.score-board {
+  display: flex;
+}
+
+.cmp-score,
+.ply-score {
+  width: 7.5rem;
+  background-color: white;
+  color: rgba(101, 101, 101, 1);
+  font-weight: 700;
+  line-height: 0;
+  justify-self: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  font-weight: normal;
+}
+
+.cmp-score p {
+  font-weight: 700;
+}
+.ply-score p {
+  font-weight: 700;
+}
+
+.count {
+  line-height: 1;
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+}
+
+.container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.buttons {
+  position: relative;
+}
+
+.button-rock {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  margin-top: -45px;
+  margin-left: -106px;
+  background-color: white;
+  border: rgba(0, 116, 182, 1) solid 16px;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+.button-scissor {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  margin-top: -70px;
+  margin-left: 124px;
+  background-color: white;
+  border: 16px solid rgba(189, 0, 255, 1);
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  cursor: pointer;
+}
+.button-paper {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  margin-top: 93px;
+  margin-left: -62px;
+  background-color: white;
+  border: rgba(255, 169, 67, 1) solid 16px;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  cursor: pointer;
+}
+
+.botton-btn {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  justify-content: flex-end;
+  margin-top: 150px;
+  margin-left: -26px;
+}
+
+.rul-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: transparent;
+  border: white solid 3px;
+  color: white;
+  font-size: 1rem;
+  margin-right: 15px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.nxt-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 15px;
+  background-color: transparent;
+  border: white solid 3px;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* Js Style */
+
+.ply-button-rock {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  margin-top: -35px;
+  margin-left: -265px;
+  background-color: white;
+  border: rgba(0, 116, 182, 1) solid 16px;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  cursor: pointer;
+}
+.cmp-button-rock {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  margin-top: -38px;
+  margin-left: 190px;
+  background-color: white;
+  border: rgba(0, 116, 182, 1) solid 16px;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  cursor: pointer;
+}
+.ply-button-scissors {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  margin-top: -35px;
+  margin-left: -265px;
+  background-color: white;
+  border: 16px solid rgba(189, 0, 255, 1);
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  cursor: pointer;
+}
+.cmp-button-scissors {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  margin-top: -38px;
+  margin-left: 190px;
+  background-color: white;
+  border: 16px solid rgba(189, 0, 255, 1);
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  cursor: pointer;
+}
+.ply-button-paper {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  margin-top: -35px;
+  margin-left: -265px;
+  background-color: white;
+  border: rgba(255, 169, 67, 1) solid 16px;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  cursor: pointer;
+}
+.cmp-button-paper {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  margin-top: -38px;
+  margin-left: 190px;
+  background-color: white;
+  border: rgba(255, 169, 67, 1) solid 16px;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  cursor: pointer;
+}
+.js-img-style {
+  position: absolute;
+}
+
+.js-btn-position {
+  margin-top: -67px;
+  margin-left: -96px;
+  z-index: 10;
+}
+
+#play-again {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: -62px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: white;
+  border: white solid 5px;
+  border-radius: 10px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: rgba(107, 107, 107, 1);
+}
+.js-para {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin-top: -16px;
+  margin-left: -100px;
+  text-align: center;
+}
+
+.js-para-2 {
+  position: absolute;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 35px;
+  margin-left: -48px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.js-para-tie {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin-top: -16px;
+  margin-left: -25px;
+  text-align: center;
+}
+
+.text-1 {
+  position: absolute;
+  color: white;
+  margin-top: -72px;
+  margin-left: -250px;
+}
+
+.text-2 {
+  position: absolute;
+  color: white;
+  margin-top: -75px;
+  margin-left: 210px;
+  width: fit-content;
+  text-align: center;
+}
+
+/* @keyframes winner {
+  0% {
+    box-shadow: 0 0 0 0 #293251;
+    opacity: 0.5;
+  }
+  50% {
+    box-shadow: 0 0 0 40px #293251, 0 0 0 80px #232c4b;
+    opacity: 0.8;
+  }
+  100% {
+    box-shadow: 0 0 0 130px #1e2949;
+    opacity: 1;
+  }
+}
+
+@keyframes loser {
+  0% {
+    box-shadow: 0 0 0 0 #ff5f5f;
+    opacity: 0.5;
+  }
+  50% {
+    box-shadow: 0 0 0 40px #ff4c4c, 0 0 0 80px #ff1f1f;
+    opacity: 0.8;
+  }
+  100% {
+    box-shadow: 0 0 0 130px #ff0000;
+    opacity: 1;
+  }
+}
+
+.winner-button {
+  animation: winner 1s ease forwards;
+}
+
+.loser-button {
+  animation: loser 1s ease forwards;
+} */
+
+@keyframes winner {
+  0% {
+    box-shadow: 0 0 0 0 rgba(20, 70, 20, 0.8);
+  }
+  20% {
+    box-shadow: 0 0 0 15px rgba(20, 70, 20, 0.6),
+      0 0 0 30px rgba(35, 44, 75, 0.4), 0 0 0 45px rgba(30, 41, 73, 0.2);
+  }
+  40% {
+    box-shadow: 0 0 0 30px rgba(20, 70, 20, 0.6),
+      0 0 0 60px rgba(35, 44, 75, 0.4), 0 0 0 90px rgba(30, 41, 73, 0.2);
+  }
+  60% {
+    box-shadow: 0 0 0 45px rgba(20, 70, 20, 0.4),
+      0 0 0 90px rgba(35, 44, 75, 0.2), 0 0 0 135px rgba(30, 41, 73, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 45px rgba(20, 70, 20, 0.2),
+      0 0 0 90px rgba(35, 44, 75, 0.1), 0 0 0 135px rgba(30, 41, 73, 0.05); /* Adjusted to medium sizes */
+  }
+}
+
+.winner-button {
+  animation: winner 1s forwards;
+  -webkit-animation: winner 1s forwards;
+}
+
+.loser-button {
+  animation: winner 1s ease-out forwards;
+  -webkit-animation: winner 1s ease-out forwards;
+}

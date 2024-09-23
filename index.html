@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="panel">
+      <div class="title">
+        <div>Rock</div>
+        <div>Paper</div>
+        <div>Scissors</div>
+      </div>
+      <div class="score-board">
+        <span class="cmp-score">
+          <p>Computer</p>
+          <p>Score</p>
+          <div class="count js-cmp-score">0</div>
+        </span>
+        <span class="ply-score">
+          <p>Your</p>
+          <p>Score</p>
+          <div class="count js-ply-score">0</div>
+        </span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="js-inner-elements moves-div">
+        <button class="button-rock">
+          <img class="img-size js-rock-btn" src="./img/Rock.png" alt="" />
+        </button>
+        <img src="./img/Line 1.png" alt="" />
+        <div>
+          <button class="button-scissor js-scissor-btn">
+            <img class="img-size" src="./img/Scissors.png" alt="" />
+          </button>
+          <img src="./img/Line 3.png" alt="" />
+          <button class="button-paper js-paper-btn">
+            <img class="img-size" src="./img/Paper.png" alt="" />
+          </button>
+          <img src="./img/Line 2.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="botton-btn">
+      <button class="rul-btn" id="js-rul-btn">Rules</button>
+      <button class="nxt-btn" id="js-nxt-btn">Next</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

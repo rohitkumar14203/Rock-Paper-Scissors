@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./hurray.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="section">
+      <div class="content">
+        <div>
+          <img class="star" src="./img/cup.png" alt="" />
+        </div>
+        <div class="cups">
+          <img src="./img/star.png" alt="" />
+        </div>
+        <div>
+          <div class="all-para">
+            <p class="p1">Hurray!!!</p>
+            <p class="p2">You won the Game</p>
+          </div>
+          <button class="btn-ply-again" onclick="playAgain()" ;>
+            Play Again
+          </button>
+        </div>
+
+        <div class="end-button"><button class="rules-btn">Rules</button></div>
+      </div>
+    </section>
+    <script>
+      function playAgain() {
+        localStorage.removeItem("scores");
+        window.location.href = "./index.html";
+      }
+      let imgVisible = false;
+      let img;
+      document.querySelector(".rules-btn").addEventListener("click", () => {
+        if (!imgVisible) {
+          img = document.createElement("img");
+          img.src = "./img/rules.png";
+          img.style.position = "absolute";
+          img.style.bottom = "100px";
+          img.style.right = "20px";
+          document.querySelector(".rules-btn").appendChild(img);
+          imgVisible = true;
+        } else {
+          document.querySelector(".rules-btn").removeChild(img);
+          imgVisible = false;
+        }
+      });
+    </script>
+  </body>
+</html>
